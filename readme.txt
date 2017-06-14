@@ -1,7 +1,8 @@
-ÏîÄ¿Ê¹ÓÃ£º
-1. npm install 
-2. node ./bin/www
-3. http://localhost:3000/
+é¡¹ç›®ä½¿ç”¨ï¼š
+1. express init
+2. npm install 
+3. node ./bin/www
+4. http://localhost:3000/
 
-ÏîÄ¿ÃèÊö£º
-ÓÃexpress¿ò¼Ü´î½¨µÄÍøÕ¾,H5²¥·ÅÒôÀÖÍøÕ¾
+é¡¹ç›®æè¿°ï¼š
+ç”¨expressæ¡†æ¶æ­å»ºçš„ç½‘ç«™,H5æ’­æ”¾éŸ³ä¹ç½‘ç«™
