@@ -1,0 +1,135 @@
+*{ 
+	padding: 0; 
+	margin: 0;
+}
+html,
+body{
+	height: 100%;
+}
+ol,
+ul,
+li{
+	list-style: number;
+}
+body{
+	font:14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	background-color: lightseagreen;
+	color: #fff;
+	text-align: center;
+}
+header,
+.left,
+.right{
+	position: absolute;
+}
+header{
+	left:10px;
+	top:10px;
+	right:10px;
+	height: 150px;
+}
+	header h1{
+		font-size: 40px;
+		height: 60px;
+		line-height: 60px;
+	}
+.left{
+	left:10px;
+	top:170px;
+	bottom: 10px;
+	width:15%;
+	border: 1px solid tomato;
+}
+	.left ul{
+		margin-left: 20px;
+		padding:10px;
+		text-align: left;
+		/* overflow: auto; */
+	}
+		.left ul li{
+			line-height: 30px;
+			cursor: pointer;
+			border-bottom: 1px dashed tomato;
+		}
+		.left ul li.selected{
+			color: green;
+		}
+.right{
+	top:170px;
+	right:10px;
+	bottom:10px;
+	left: -webkit-calc(15% + 20px);
+	left: -moz-calc(15% + 20px);
+	left: calc(15% + 20px);
+}
+.type{
+	width: 240px;
+	margin: 0 auto;
+	overflow: hidden;
+	zoom:1;
+}
+.type li{
+	width: 110px;
+	height: 30px;
+	margin-right: 6px;
+	line-height: 30px;
+	float: left;
+	border-radius: 6px;
+	text-align: center;
+	color: #fff;
+	border:1px solid tomato;
+	cursor: pointer;
+}
+.type li.selected{
+	background-color: tomato;
+	cursor: default;
+}
+input[type="range"]{
+	-webkit-appearance:none;
+	height: 8px;
+	background: #999;
+	border-radius: 10px;
+	outline: none;
+}
+input[type="range"]::-webkit-slider-thumb{
+	-webkit-appearance:none;
+	height: 12px;
+	width: 12px;
+	background-color: #fff;
+	border-radius: 100%;
+}
+input[type="range"]::-moz-range-track{
+	height: 8px;
+	background-color: #999;
+	border-radius: 10px;
+	border:none;
+}
+input[type="range"]::-moz-range-thumb{
+	height: 12px;
+	width: 12px;
+	background-color: #fff;
+	border:none;
+	border-radius: 100%;
+}
+@media screen  and (max-width: 800px), screen and (max-height:500px){
+	body{
+		font-size: 12px;
+	}
+	header{
+		height: 80px;
+	}
+	header h1{
+		font-size: 24px;
+		height: 34px;
+		line-height: 34px;
+	}
+	header .type li{
+		height: 20px;
+		line-height: 20px;
+		width: 80px;
+	}
+	.left,
+	.right{
+		top:100px;
+	}
+}
